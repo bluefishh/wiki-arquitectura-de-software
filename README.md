@@ -1,6 +1,6 @@
 # Glosario Patrones de Arquitectura
 
-A continiación, se presentarán cinco patrones de aquitectura vistos en clase de los cuales se mostrará su concepto y un ejemplo sencillo para cada uno.
+A continuación, se presentarán cinco patrones de aquitectura vistos en clase de los cuales se mostrará su concepto y un ejemplo sencillo para cada uno.
 
 ## Patrón por Capas
 
@@ -15,4 +15,7 @@ Este patrón estructura nuestro sistema dividiendolo capas, cada capa va a tener
 
 Este patrón facilita la separación de responsabilidades, con el objetivo de no tener que afectar elementos que no se requieran modificar al momento de tener que cambiar algo en específico, por ejemplo si se necesita cambiar un botón de la interfaz del usuario se va a hacer en la capa de presentación y no se va a tener que modificar otra y además va a ser mucho más sencillo. De esta manera nuestro sistema se vuelve mantenible y sostenible.
 
-Dentro del repositorio se deja un ejemplo de una calculadora sencilla que usa este patrón arquitectónico.
+Dentro del repositorio se deja un ejemplo de una calculadora sencilla que usa este patrón arquitectónico guardando el historial de operaciones que se han realizado en esta.
+
+## Patrón MVC
+

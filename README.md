@@ -32,3 +32,16 @@ En pocas palabras, el usuario lo que hace es interactuar con la vista, luego est
 Este patrón también tiene el beneficio de separar responsabilidades, lo que hace que nuestró código sea mantenible y el sistema sostenible.
 
 Dentro del repositorio se deja un ejemplo de una sistema de tareas sencillo que usa este patrón arquitectónico.
+
+## Patrón Maestro-Esclavo
+
+Este patrón estructura nuestro sistema en dos partes, maestro y esclavos, en este caso el maestro es quien controla o cordina la ejecución de uno o más esclavos, básicamente reparte el trabajo entre los esclavos que existan y estos son los que van a ejecutarse o trabajar, estos al final deben devolver resultados al maestro.
+
+* Maestro: va a dividir las tareas en subtareas para repartirlas a los esclavos, también este recibirá resultados de los esclavos y podrá manejarlos según su criterio.
+* Esclavos: ejecutarán las subtareas asignadas por el maestro, cada uno trabajará de manera independiente procesando su parte y al final pasarán los resultados al maestro.
+
+![](https://i.imgur.com/N08flyQ.png)
+
+Un uso que se le ha dado es a los sistemas de gestión de bases de datos no relacionales como MongoDB, usan este patrón para crecer los recursos de esta distributendo cargas.
+
+Dentro del repositorio se de deja un ejemplo de un sistema que procesa texto, lo transforma en mayúsculas, minúsculas y cuenta las palabras. Este sistema usa este patrón.

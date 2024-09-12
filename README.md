@@ -11,4 +11,8 @@ Este patrón estructura nuestro sistema dividiendolo capas, cada capa va a tener
 * Capa de acceso a datos: se comunica con la base de datos para poder hacer las transacciones sobre esta.
 * Capa de base de datos: base de datos donde se almacena todo lo relacionado a los datos del sistema que finalmente serán información útil para la capa de la lógica de negocios y presentación.
 
-Este patrón facilita la separación de responsabilidades, con el objetivo de no tener que afectar elementos que no se requieran modificar al momento de tener que cambiar algo en específico, por ejemplo si se necesita cambiar un botón de la interfaz del usuario se va a hacer en la capa de presentación y no se va a tener que modificar otra y además va a ser mucho más sencillo. De esta manera nuestro sistema es más mantenible y sostenible.
+![](https://i.imgur.com/gO3HGMi.png)
+
+Este patrón facilita la separación de responsabilidades, con el objetivo de no tener que afectar elementos que no se requieran modificar al momento de tener que cambiar algo en específico, por ejemplo si se necesita cambiar un botón de la interfaz del usuario se va a hacer en la capa de presentación y no se va a tener que modificar otra y además va a ser mucho más sencillo. De esta manera nuestro sistema se vuelve mantenible y sostenible.
+
+Dentro del repositorio se deja un ejemplo de una calculadora sencilla que usa este patrón arquitectónico.

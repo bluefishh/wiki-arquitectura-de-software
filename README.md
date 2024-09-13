@@ -45,3 +45,16 @@ Este patrón estructura nuestro sistema en dos partes, maestro y esclavos, en es
 Un uso que se le ha dado es a los sistemas de gestión de bases de datos no relacionales como MongoDB, usan este patrón para crecer los recursos de esta distributendo cargas.
 
 Dentro del repositorio se de deja un ejemplo de un sistema que procesa texto, lo transforma en mayúsculas, minúsculas y cuenta las palabras. Este sistema usa este patrón.
+
+## Patrón Observador
+
+Este patrón estructura nuestro sistema haciendo una conexión entre un objeto que se le llama sujeto que funciona como objeto principal el cual va a notificar a otros objetos que son llamados observadores, como si se tratara de una relación de uno a muchos de tal manera que cuando uno objetos cambia de estado, los otros serán notificados automáticamente.
+
+* Sujeto: este objeto tiene un estado y notificará a los observadores cuando cambie.
+* Observadores: estos objetos están pendoentes de los cambios del objeto llamado sujeto.
+
+![](https://i.imgur.com/L8oZNBF.png)
+
+En este patrón los objetos llamados observadores no están directamente asociados al objeto llamado sujeto, esto permite que haya flexibilidad y reutilización de código.
+
+Dentro del repositotio se deja un ejemplo de un sistema sobre el clima que usa este patrón.

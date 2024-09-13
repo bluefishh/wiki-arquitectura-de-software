@@ -58,3 +58,15 @@ Este patrón estructura nuestro sistema haciendo una conexión entre un objeto q
 En este patrón los objetos llamados observadores no están directamente asociados al objeto llamado sujeto, esto permite que haya flexibilidad y reutilización de código.
 
 Dentro del repositotio se deja un ejemplo de un sistema sobre el clima que usa este patrón.
+
+## Patrón Filtro de Tubería
+
+Este patrón estructura nuestro sistema realizando una serie de filtros o pasos para en la mayoría de sus casos procesar datos, de esta manera los datos van a tener que ir pasando por cada uno de los filtros y estos los van a procesar con alguna operación en concreto y luego va a pasar por el siguiente filtro. Los datos entonces van pasando por las tuberías para al final ya tenerlos procesados. Las características principales de este patrón son:
+
+* Reutilización: cada filtro es independiente, lo que hace que podamos reutilizarlo.
+* División del proceso: un proceso que puede ser complejo se va a poder dividir en pasos que son los filtros.
+* Composición: los filtros o pasos se pueden encadenar para obtener una combinación o crear un flujo de procesamiento
+
+![](https://i.imgur.com/5RIuIrG.png)
+
+Dentro de repositorio se deja un ejemplo de un procesamiento de una lista de números a la que se le aplicará este patrón mediante diferentes filtros.
